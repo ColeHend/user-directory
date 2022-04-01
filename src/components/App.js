@@ -1,6 +1,6 @@
 import "./App.css";
-import InfoDisplay from "./infoDisplay";
-import NavBar from "./navbar";
+import InfoDisplay from "./infodisplay/index";
+import NavBar from "./navbar/navbar";
 import useManageSt from "./manageState";
 function App() {
   const { viewPosition, setViewPosition, maxLength } = useManageSt();

@@ -1,8 +1,9 @@
 import React from "react";
-import data from "../data";
-import "./infoDisplay.css";
+import data from "../../data";
+import "./index.css";
 export default function InfoDisplay(props) {
   const { viewPosition, maxLength } = props;
+
   return (
     <div className="infoDisplay">
       <div className="info">
