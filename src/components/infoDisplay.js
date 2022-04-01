@@ -1,35 +1,39 @@
 import React from "react";
 import data from "../data";
+import "./infoDisplay.css";
 export default function InfoDisplay(props) {
-  const { viewPosition } = props;
+  const { viewPosition, maxLength } = props;
   return (
     <div className="infoDisplay">
       <div className="info">
         <div>
-          <h1>
+          <span>
             {data[viewPosition].name.first + " " + data[viewPosition].name.last}
-          </h1>
+          </span>
+          <span style={{ float: "right" }}>
+            {viewPosition + 1}/{maxLength + 1}
+          </span>
         </div>
         <div>
-          <h2>
+          <span>
             From: {data[viewPosition].city + ", " + data[viewPosition].country}
-          </h2>
+          </span>
         </div>
         <div>
-          <h2>Job Title: {data[viewPosition].title}</h2>
+          <span>Job Title: {data[viewPosition].title}</span>
         </div>
         <div>
-          <h2>Employer: {data[viewPosition].employer}</h2>
+          <span>Employer: {data[viewPosition].employer}</span>
         </div>
         <div>
-          <h2>
+          <span>
             Favorite Movies:
             <ul>
               {data[viewPosition].favoriteMovies.map((movie) => {
                 return <li key={movie + data[viewPosition].name}>{movie}</li>;
               })}
             </ul>
-          </h2>
+          </span>
         </div>
       </div>
     </div>
