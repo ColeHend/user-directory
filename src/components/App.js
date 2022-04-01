@@ -1,5 +1,5 @@
 import "./App.css";
-import InfoDisplay from "./infodisplay/index";
+import InfoDisplay from "./infodisplay/display";
 import NavBar from "./navbar/navbar";
 import useManageSt from "./manageState";
 function App() {

@@ -1,3 +1,29 @@
 button:hover {
   cursor: pointer;
 }
+
+.changeViewBtn {
+  border: "none";
+  background-color: inherit;
+  font-weight: 500;
+}
+
+.otherBtn {
+  border: none;
+  margin: 10px;
+  background-color: #3333ff;
+}
+
+.editBtn {
+  margin-left: auto;
+}
+.previousBtn {
+  float: left;
+}
+.nextBtn {
+  float: right;
+}
+
+button {
+  height: 2vh;
+}
